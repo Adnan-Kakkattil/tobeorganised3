@@ -71,7 +71,7 @@ const BrandLogo = ({ className = "", alt = "TOBEORGANISED logo" }) => (
   <img
     src={brandLogo}
     alt={alt}
-    className={`w-auto object-contain ${className}`}
+    className={`max-w-full h-auto object-contain ${className}`}
   />
 );
 
@@ -300,7 +300,10 @@ export default function App() {
           >
              <span className="text-magenta font-mono tracking-[0.5em] uppercase text-xs mb-4 block">Enter the Narrative</span>
              <h1 className="sr-only">TOBEORGANISED</h1>
-             <BrandLogo className="h-24 md:h-44 lg:h-56" alt="TOBEORGANISED official logo" />
+             <BrandLogo
+               className="w-[86vw] max-w-[1500px] max-h-[46vh] drop-shadow-[0_8px_35px_rgba(0,0,0,0.6)]"
+               alt="TOBEORGANISED official logo"
+             />
           </motion.div>
           
           <motion.div 
